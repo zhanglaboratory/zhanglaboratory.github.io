@@ -8,23 +8,25 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 实验室欢迎语 (HTML Flexbox 布局 - 绝对顶格写法)
+  # 1. 实验室欢迎语 (使用 HTML Table 强制排版 - 绝对稳定版)
   - block: markdown
     content:
       title: ''
       subtitle: ''
       text: |
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
-        <div style="flex: 1; min-width: 280px;">
-        <img src="uploads/cartoon.jpg" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </div>
-        <div style="flex: 2; min-width: 300px;">
-        <h1 style="margin-top:0; font-size:2.2rem;">Welcome to Zhang Laboratory</h1>
-        <p style="font-weight:bold; color:#666;">The Seventh Affiliated Hospital, Sun Yat-sen University</p>
-        <p>Our laboratory represents a unique convergence of <strong>high-volume clinical surgery</strong> and <strong>advanced translational science</strong>.</p>
-        <p>Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.</p>
-        </div>
-        </div>
+        <table style="width: 100%; border: none; border-collapse: collapse; background: transparent;">
+          <tr style="border: none; background: transparent;">
+            <td style="width: 35%; vertical-align: top; border: none; padding-right: 30px; background: transparent;">
+              <img src="uploads/cartoon.jpg" style="width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+            </td>
+            <td style="vertical-align: middle; border: none; background: transparent;">
+              <h1 style="margin-top: 0; font-size: 2.2rem; line-height: 1.2;">Welcome to Zhang Laboratory</h1>
+              <p style="font-weight: 500; opacity: 0.8; margin-bottom: 20px;">The Seventh Affiliated Hospital, Sun Yat-sen University</p>
+              <p>Our laboratory represents a unique convergence of <strong>high-volume clinical surgery</strong> and <strong>advanced translational science</strong>.</p>
+              <p>Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.</p>
+            </td>
+          </tr>
+        </table>
     design:
       columns: '1'
       background:
