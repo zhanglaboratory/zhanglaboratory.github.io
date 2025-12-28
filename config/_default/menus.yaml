@@ -12,5 +12,5 @@ main:
     weight: 30
 
   - name: Database
-    url: 'https://zhang-lab-database.shinyapps.io/KICDB/' # 点击直接跳转到 Shiny App
+    url: '/database/'
     weight: 40
