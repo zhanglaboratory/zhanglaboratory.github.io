@@ -10,7 +10,7 @@ Here you can find the open-source resources and multi-omics databases developed 
 
 ### 1. KICDB: Kinase Inhibitor Cardiotoxicity Database
 
-**👉 Access Link:** [https://zhang-lab-database.shinyapps.io/KICDB/](https://zhang-lab-database.shinyapps.io/KICDB/)
+** Link:** [https://zhang-lab-database.shinyapps.io/KICDB/](https://zhang-lab-database.shinyapps.io/KICDB/)
 
 <br>
 
