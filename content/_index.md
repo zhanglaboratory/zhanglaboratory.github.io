@@ -62,24 +62,21 @@ sections:
     design:
       view: citation
 
-  # 5. Contact / Footer (新增的底部联系方式，仿 Han Lab 风格)
-  - block: contact
+# 5. Contact (替代方案：使用 markdown 手写联系方式)
+  - block: markdown
     id: contact
     content:
       title: Contact Us
       subtitle: ''
-      text: 'To learn more about our research or potential collaborations, please reach out.'
-      email: dr.jian.zhang.phd@gmail.com
-      address:
-        street: 'The Seventh Affiliated Hospital, Sun Yat-sen University'
-        city: 'Shenzhen'
-        region: 'China'
-        postcode: '518107'
-        country: 'China'
-        country_code: 'CN'
+      text: |-
+        To learn more about our research or potential collaborations, please reach out.
+        
+        **Email:** dr.jian.zhang.phd@gmail.com
+        
+        **Address:** The Seventh Affiliated Hospital, Sun Yat-sen University  
+        Shenzhen, Guangdong, China 518107
     design:
-      columns: '2'
+      columns: '1'
       background:
-        text_color_light: true # 强制文字变白
-        color: '#1a202c' # 深黑色背景 (类似 Han Lab)
----
+        color: '#1a202c' # 深黑色背景
+        text_color_light: true # 文字强制变白
