@@ -34,3 +34,18 @@ p, li {
 .powered-by, .theme-toggle, .gh-count {
     display: none !important;
 }
+/* --- 5. 彻底隐藏底部版权与按钮 --- */
+
+/* 隐藏 "Made with Hugo Blox" 整行文字 */
+.powered-by {
+    display: none !important;
+}
+
+/* 隐藏 "Duplicate this template" 按钮 */
+/* 针对不同版本的模板，我们把可能的类名都写上，确保万无一失 */
+.github-btn, 
+.github-button,
+a[href*="github.com"][href*="template"],
+.theme-toggle {
+    display: none !important;
+}
