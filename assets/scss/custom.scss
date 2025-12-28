@@ -1,10 +1,30 @@
-/* 隐藏底部的 Made with Hugo Blox 和 Duplicate 按钮 */
+/* --- 1. 全局字体与字号统一设置 --- */
+
+/* 强制所有元素使用 Arial 字体 */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, blockquote {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* 设定基准字号，统一视觉大小 */
+html {
+    font-size: 16px; 
+}
+body {
+    line-height: 1.6; /* 增加行高，让阅读更舒适 */
+}
+
+
+/* --- 2. 隐藏底部多余信息 --- */
+
+/* 隐藏 "Made with Hugo Blox" */
 .powered-by {
     display: none !important;
 }
 
-/* 如果你想顺便把底部的版权信息微调一下，可以用下面的代码（可选） */
-/* .footer-copyright {
-    font-size: 0.8rem;
-} 
-*/
+/* 隐藏 "Duplicate this template" 按钮和主题切换按钮 */
+.theme-toggle, .gh-count {
+     display: none !important;
+}
+
+/* (可选) 如果你连 "© 2025 Zhang Laboratory" 都想去掉，取消下面这行的注释 */
+/* .footer-copyright { display: none !important; } */
