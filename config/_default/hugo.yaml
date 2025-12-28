@@ -1,4 +1,25 @@
-# 找到 title: Your Name 或者 title: ...
-title: Zhang Laboratory  # 这里控制左上角显示的文字
+# Website Title and Copyright
+title: Zhang Laboratory  # <--- 这里控制左上角的名字
 baseurl: "https://zhanglaboratory.github.io/"
 copyright: '© {year} Zhang Laboratory'
+
+# Default Language
+defaultContentLanguage: en
+hasCJKLanguage: true  # 支持中文显示
+
+# Advanced Settings (保留默认即可)
+enable_git_info: false
+summaryLength: 30
+paginate: 10
+enableEmoji: true
+footnotereturnlinkcontents: "<sup>^</sup>"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+permulinks:
+  tags: "/tags/:slug/"
+  categories: "/categories/:slug/"
+  publication_types: "/publication-types/:slug/"
+build:
+  writeStats: true
+outputs:
+  home: [HTML, RSS, JSON, WebAppManifest]
+  section: [HTML, RSS]
