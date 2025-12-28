@@ -1,7 +1,7 @@
 ---
 title: Scientific Publications
 date: 2023-01-01
-view: citation # 列表视图模式：citation (引用格式) | card (卡片格式)
+view: card # 列表视图模式：citation (引用格式) | card (卡片格式)
 banner:
   caption: ''
   image: ''
