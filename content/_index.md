@@ -8,7 +8,7 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 实验室欢迎语 (已修复灰色代码框问题)
+  # 1. 实验室欢迎语 (已修复：移除HTML缩进以防止变成代码块)
   - block: markdown
     content:
       title: ''
@@ -93,7 +93,7 @@ sections:
     design:
       view: citation
 
-  # 6. 联系方式 (已更新邮箱格式)
+  # 6. 联系方式 (已修改邮箱格式)
   - block: markdown
     id: contact
     content:
