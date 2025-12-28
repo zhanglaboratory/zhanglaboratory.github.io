@@ -8,22 +8,35 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 实验室欢迎语 (更具学术范)
+  # 1. 实验室欢迎语 (HTML 布局：左图右文)
   - block: markdown
     content:
-      title: 'Welcome to Zhang Laboratory'
-      subtitle: 'The Seventh Affiliated Hospital, Sun Yat-sen University'
+      title: ''
+      subtitle: ''
       text: |
-        Our laboratory represents a unique convergence of **high-volume clinical surgery** and **advanced translational science**.
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 3rem;">
+          
+          <div style="flex: 1; min-width: 280px;">
+            <img src="uploads/cartoon.jpg" style="border-radius: 1rem; width: 100%; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+          </div>
+          
+          <div style="flex: 2; min-width: 300px;">
+            <h1 style="margin-top: 0; font-size: 2.2rem; line-height: 1.2; margin-bottom: 0.5rem;">Welcome to Zhang Laboratory</h1>
+            <p style="opacity: 0.8; font-size: 1rem; margin-bottom: 1.5rem; font-weight: 500;">The Seventh Affiliated Hospital, Sun Yat-sen University</p>
+            
+            <p>Our laboratory represents a unique convergence of <strong>high-volume clinical surgery</strong> and <strong>advanced translational science</strong>.</p>
+            
+            <p>Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.</p>
+          </div>
         
-        Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
+        </div>
     design:
       columns: '1'
       background:
         gradient_mesh:
           enable: true
 
-  # 2. 研究方向 (结合 CV 中的基金和具体方向)
+  # 2. 研究方向
   - block: markdown
     content:
       title: '🔬 Research Focus'
@@ -44,7 +57,7 @@ sections:
     design:
       columns: '1'
 
-  # 3. 数据库板块 (保持不变)
+  # 3. 数据库板块
   - block: markdown
     id: database
     content:
@@ -59,7 +72,7 @@ sections:
     design:
       columns: '1'
 
-  # 4. 精选论文 (图文展示区)
+  # 4. 精选论文 (图文展示区 - Card 视图)
   - block: collection
     id: featured
     content:
@@ -69,10 +82,10 @@ sections:
           - publications
         featured_only: true
     design:
-      view: card # <--- 改为 card 模式，这样图片会显示得更大更漂亮
+      view: card
       columns: 2
 
-  # 5. 全部论文
+  # 5. 全部论文 (Citation 视图)
   - block: collection
     id: publications
     content:
@@ -85,7 +98,7 @@ sections:
     design:
       view: citation
 
-  # 6. 联系方式 (保持不变)
+  # 6. 联系方式 (黑底白字)
   - block: markdown
     id: contact
     content:
@@ -94,7 +107,7 @@ sections:
       text: |-
         To learn more about our research or potential collaborations, please reach out.
         
-        **Email:** dr.jian.zhang.phd at gmail.com
+        **Email:** dr.jian.zhang.phd@gmail.com
         
         **Address:** The Seventh Affiliated Hospital, Sun Yat-sen University  
         Shenzhen, Guangdong, China 518107
