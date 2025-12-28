@@ -28,4 +28,4 @@ Here you can find the open-source resources and multi-omics databases developed 
 
 ### 2. Upcoming Database (Work in Progress)
 
-*We are currently developing multi-omics databases for Gastrointestinal Stromal Tumors (GIST) and Gastric Cancer. Stay tuned!*
+*We are currently developing multi-omics databases for Gastrointestinal Tumors. Stay tuned!*
