@@ -7,10 +7,10 @@ main:
     url: '#featured'
     weight: 20
 
-  - name: Publications  # <--- 确保这里叫 Publications
+  - name: Publications
     url: '#publications'
     weight: 30
 
- - name: Database
-    url: '#database'  # <--- 修改这里，从原来的网址改为锚点
+  - name: Database
+    url: '#database'
     weight: 40
