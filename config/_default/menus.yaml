@@ -1,16 +1,16 @@
 main:
   - name: Home
-    url: '#about'
+    url: '/' # 点击回到主页
     weight: 10
 
   - name: Research
-    url: '#featured'
+    url: '/' # 研究方向目前在主页上，所以指向主页
     weight: 20
 
   - name: Publications
-    url: '#publications'
+    url: '/publication/' # <--- 关键修改：点击后进入独立的论文列表页面
     weight: 30
 
   - name: Database
-    url: '#database'
+    url: 'https://zhang-lab-database.shinyapps.io/KICDB/' # 点击直接跳转到 Shiny App
     weight: 40
