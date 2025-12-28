@@ -8,27 +8,22 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 实验室欢迎语 (HTML 布局：左图右文)
+  # 1. 实验室欢迎语 (已修复灰色代码框问题)
   - block: markdown
     content:
       title: ''
       subtitle: ''
       text: |
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 3rem;">
-          
-          <div style="flex: 1; min-width: 280px;">
-            <img src="uploads/cartoon.jpg" style="border-radius: 1rem; width: 100%; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
-          </div>
-          
-          <div style="flex: 2; min-width: 300px;">
-            <h1 style="margin-top: 0; font-size: 2.2rem; line-height: 1.2; margin-bottom: 0.5rem;">Welcome to Zhang Laboratory</h1>
-            <p style="opacity: 0.8; font-size: 1rem; margin-bottom: 1.5rem; font-weight: 500;">The Seventh Affiliated Hospital, Sun Yat-sen University</p>
-            
-            <p>Our laboratory represents a unique convergence of <strong>high-volume clinical surgery</strong> and <strong>advanced translational science</strong>.</p>
-            
-            <p>Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.</p>
-          </div>
-        
+        <div style="flex: 1; min-width: 280px;">
+        <img src="uploads/cartoon.jpg" style="border-radius: 1rem; width: 100%; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);">
+        </div>
+        <div style="flex: 2; min-width: 300px;">
+        <h1 style="margin-top: 0; font-size: 2.2rem; line-height: 1.2; margin-bottom: 0.5rem;">Welcome to Zhang Laboratory</h1>
+        <p style="opacity: 0.8; font-size: 1rem; margin-bottom: 1.5rem; font-weight: 500;">The Seventh Affiliated Hospital, Sun Yat-sen University</p>
+        <p>Our laboratory represents a unique convergence of <strong>high-volume clinical surgery</strong> and <strong>advanced translational science</strong>.</p>
+        <p>Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.</p>
+        </div>
         </div>
     design:
       columns: '1'
@@ -98,7 +93,7 @@ sections:
     design:
       view: citation
 
-  # 6. 联系方式 (黑底白字)
+  # 6. 联系方式 (已更新邮箱格式)
   - block: markdown
     id: contact
     content:
