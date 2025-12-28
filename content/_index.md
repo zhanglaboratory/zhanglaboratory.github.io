@@ -18,9 +18,8 @@ sections:
         
         Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
 
-        <div style="text-align: center; margin-top: 40px;">
-          <img src="https://zhanglaboratory.github.io/uploads/cartoon.jpg" alt="Zhang Lab Team" style="width: 90%; max-width: 600px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-        </div>
+        ![Zhang Lab Team](https://zhanglaboratory.github.io/uploads/cartoon.jpg)
+
     design:
       columns: '1'
       background:
