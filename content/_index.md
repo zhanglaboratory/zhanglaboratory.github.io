@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 design:
-  spacing: '4rem' # 稍微减小一点板块间距，让图片离文字近一点
+  spacing: '4rem'
 
 sections:
   # 1. 实验室欢迎语 (文字部分)
@@ -23,16 +23,15 @@ sections:
         gradient_mesh:
           enable: true
 
-  # 2. 底部卡通图片 (单独一个板块)
+  # 2. 底部卡通图片 (已修复路径)
   - block: markdown
     content:
       title: ''
       subtitle: ''
       text: |
         <div style="text-align: center;">
-          <img src="uploads/cartoon.jpg" alt="Zhang Lab Team" style="width: 90%; max-width: 600px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+          <img src="/uploads/cartoon.jpg" alt="Zhang Lab Team" style="width: 90%; max-width: 600px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
         </div>
     design:
       columns: '1'
-      # 不设置背景，让它自然融入页面底色
 ---
