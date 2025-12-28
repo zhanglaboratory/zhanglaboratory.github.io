@@ -14,21 +14,3 @@ address:
   postcode: '518107'
   country: 'China'
   country_code: 'CN'
-
-# Geographic coordinates (for the map)
-coordinates:
-  latitude: '22.788'
-  longitude: '113.924'
-# -----------------------------------------------------------------------------
-# Footer Configuration
-# -----------------------------------------------------------------------------
-footer:
-  copyright:
-    # ⬇️ 关键修改：我们在版权文字后面，强行插入了一段隐藏广告的 <style> 代码
-    notice: '© {year} Zhang Laboratory <style>.powered-by, a[href*="template"], .github-btn { display: none !important; }</style>'
-    license:
-      enable: false
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
-  show_powered_by: false
