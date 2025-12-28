@@ -3,20 +3,17 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, blockquote {
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* --- 2. 统一标题规格 (已调小 H1) --- */
-
-/* H1: 页面主标题 (Welcome, Research Focus, Publications...) */
+/* --- 2. 统一标题规格 (H1=2.0rem, H2=1.5rem) --- */
 h1 {
-    font-size: 2.0rem !important; /* <--- 从 2.5rem 改为 2.0rem (约 32px) */
+    font-size: 2.0rem !important; 
     font-weight: 700 !important;
     line-height: 1.2 !important;
-    margin-bottom: 1.2rem !important; /* 间距也相应微调 */
-    color: #1a202c; /* 深黑色 */
+    margin-bottom: 1.2rem !important;
+    color: #1a202c;
 }
 
-/* H2/H3: 次级标题 (如 1. Precision GI..., Email...) */
 h2, h3 {
-    font-size: 1.5rem !important; /* 约 24px */
+    font-size: 1.5rem !important;
     font-weight: 700 !important;
     margin-top: 1.8rem !important;
     margin-bottom: 0.8rem !important;
@@ -25,14 +22,28 @@ h2, h3 {
 
 /* --- 3. 统一正文规格 --- */
 p, li {
-    font-size: 1.05rem !important; /* 稍微调小一点点正文 (约 16.8px)，更显精致 */
+    font-size: 1.05rem !important; 
     line-height: 1.7 !important;
     color: #4a5568;
 }
 
-/* --- 4. 隐藏底部多余信息 --- */
-.powered-by, .theme-toggle, .gh-count {
+/* --- 4. 【核心修复】强制隐藏底部广告 --- */
+
+/* 隐藏 "Made with Hugo Blox" 文字 */
+.powered-by {
     display: none !important;
 }
+
+/* 隐藏 "Duplicate this template" 按钮 (精准打击) */
+a[href*="github.com"][href*="template"], 
+a[href*="generate"],
+.github-btn {
+    display: none !important;
+    visibility: hidden !important; /* 双重保险 */
+    opacity: 0 !important;         /* 三重保险 */
+}
+
+/* 隐藏底部的 Theme Toggle 和 GitHub 计数 */
+.theme-toggle, .gh-count {
     display: none !important;
 }
