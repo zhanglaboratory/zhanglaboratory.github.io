@@ -17,7 +17,7 @@ sections:
         <table style="width: 100%; border: none; border-collapse: collapse; background: transparent;">
           <tr style="border: none; background: transparent;">
             <td style="width: 35%; vertical-align: top; border: none; padding-right: 30px; background: transparent;">
-              <img src="uploads/cartoon.jpg" style="width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+              <img src="/uploads/cartoon.jpg" style="width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
             </td>
             <td style="vertical-align: middle; border: none; background: transparent;">
               <h1 style="margin-top: 0; font-size: 2.2rem; line-height: 1.2;">Welcome to Zhang Laboratory</h1>
