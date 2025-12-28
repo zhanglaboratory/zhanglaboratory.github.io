@@ -8,71 +8,30 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 实验室欢迎语 (纯净文字版 - 无图片无报错)
+  # 1. 实验室欢迎语 (只保留这一个板块)
   - block: markdown
     content:
-      title: 'Welcome to Zhang Laboratory'
-      subtitle: 'The Seventh Affiliated Hospital, Sun Yat-sen University'
+      title: ''
+      subtitle: ''
       text: |
-        Our laboratory represents a unique convergence of **clinical surgery** and **advanced translational science**.
-        
-        Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+          <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Welcome to Zhang Laboratory</h1>
+          
+          <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+            The Seventh Affiliated Hospital, Sun Yat-sen University
+          </p>
+          
+          <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+            Our laboratory represents a unique convergence of <strong>clinical surgery</strong> and <strong>advanced translational science</strong>.
+          </p>
+          
+          <p style="line-height: 1.8;">
+            Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
+          </p>
+        </div>
     design:
       columns: '1'
       background:
         gradient_mesh:
           enable: true
-
-  # 2. 研究方向 (Research Focus)
-  - block: markdown
-    content:
-      title: '🔬 Research Focus'
-      subtitle: ''
-      text: |-
-        Our research is supported by the **National Natural Science Foundation of China (NSFC)** and focuses on three strategic pillars:
-        
-        ### 1. Precision GI Oncology & Surgery
-        * **Minimally Invasive Surgery:** Optimizing robotic and laparoscopic techniques for gastric and colorectal cancer.
-        * **Clinical Translation:** Improving patient outcomes through biomarker-guided surgical strategies.
-        
-        ### 2. Non-coding RNA & Epigenetics
-        * **Mechanistic Study:** Investigating the roles of **lncRNAs** (e.g., *GHRLOS*, *FAL1*) and **alternative splicing** in tumor metastasis and chemoresistance.
-                
-        ### 3. Nanomedicine & Drug Delivery
-        * **Targeted Therapy:** Developing **biomimetic nanoparticles** for precise drug delivery.
-        * **Cardio-Oncology:** utilizing the **KICDB** database to mitigate kinase inhibitor-induced cardiotoxicity.
-    design:
-      columns: '1'
-
-  # 3. 精选代表作 (保留几篇最牛的在主页撑场面)
-  - block: collection
-    id: featured
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: card
-      columns: 2
-
-  # 4. 联系方式
-  - block: markdown
-    id: contact
-    content:
-      title: Contact Us
-      subtitle: ''
-      text: |-
-        To learn more about our research or potential collaborations, please reach out.
-        
-        **Email:** dr.jian.zhang.phd at gmail.com
-        
-        **Address:** The Seventh Affiliated Hospital, Sun Yat-sen University  
-        Shenzhen, Guangdong, China 518107
-    design:
-      columns: '1'
-      background:
-        color: '#1a202c'
-        text_color_light: true
 ---
