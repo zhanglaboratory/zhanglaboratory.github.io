@@ -11,6 +11,6 @@ main:
     url: '#publications'
     weight: 30
 
-  - name: Database
-    url: 'https://github.com/hegu2692/KICDB' # 指向你的数据库
+ - name: Database
+    url: '#database'  # <--- 修改这里，从原来的网址改为锚点
     weight: 40
