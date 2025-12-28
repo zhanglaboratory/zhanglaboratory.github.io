@@ -13,5 +13,3 @@ To learn more about our research, open positions, or potential collaborations, p
 
 ### 📍 Address
 **The Seventh Affiliated Hospital, Sun Yat-sen University** Shenzhen, Guangdong, China 518107
-
-*(We are located in the Research Building, please confirm appointment via email first.)*
