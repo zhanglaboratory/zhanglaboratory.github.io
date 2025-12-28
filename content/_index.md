@@ -8,15 +8,23 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 实验室欢迎语 (使用 Markdown 表格布局，稳如泰山)
+  # 1. 实验室欢迎语 (HTML Flexbox 布局 - 绝对顶格写法)
   - block: markdown
     content:
       title: ''
       subtitle: ''
       text: |
-        | | |
-        | :--- | :--- |
-        | <img src="uploads/cartoon.jpg" width="800px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> | <h1>Welcome to Zhang Laboratory</h1><br>**The Seventh Affiliated Hospital, Sun Yat-sen University**<br><br>Our laboratory represents a unique convergence of **high-volume clinical surgery** and **advanced translational science**.<br><br>Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation. |
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+        <div style="flex: 1; min-width: 280px;">
+        <img src="uploads/cartoon.jpg" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+        <div style="flex: 2; min-width: 300px;">
+        <h1 style="margin-top:0; font-size:2.2rem;">Welcome to Zhang Laboratory</h1>
+        <p style="font-weight:bold; color:#666;">The Seventh Affiliated Hospital, Sun Yat-sen University</p>
+        <p>Our laboratory represents a unique convergence of <strong>high-volume clinical surgery</strong> and <strong>advanced translational science</strong>.</p>
+        <p>Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.</p>
+        </div>
+        </div>
     design:
       columns: '1'
       background:
