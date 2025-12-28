@@ -4,7 +4,7 @@ main:
     weight: 10
 
   - name: Research
-    url: '/' # 研究方向目前在主页上，所以指向主页
+    url: '/Research/' # 研究方向目前在主页上，所以指向主页
     weight: 20
 
   - name: Publications
