@@ -1,30 +1,36 @@
-/* --- 1. 全局字体与字号统一设置 --- */
-
-/* 强制所有元素使用 Arial 字体 */
+/* --- 1. 全局字体设置 (Arial) --- */
 body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, blockquote {
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* 设定基准字号，统一视觉大小 */
-html {
-    font-size: 16px; 
+/* --- 2. 统一标题规格 (强制统一) --- */
+
+/* H1: 页面主标题 (如 Welcome, Research Focus, Contact Us) */
+h1 {
+    font-size: 2.5rem !important; /* 约 40px */
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1.5rem !important;
+    color: #1a202c; /* 深黑色 */
 }
-body {
-    line-height: 1.6; /* 增加行高，让阅读更舒适 */
+
+/* H2/H3: 次级标题 (如 1. Precision GI..., Email, Address) */
+h2, h3 {
+    font-size: 1.5rem !important; /* 约 24px */
+    font-weight: 700 !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    color: #2d3748;
 }
 
+/* --- 3. 统一正文规格 --- */
+p, li {
+    font-size: 1.1rem !important; /* 约 17.6px (统一阅读字号) */
+    line-height: 1.7 !important;  /* 增加行间距，阅读更舒服 */
+    color: #4a5568;
+}
 
-/* --- 2. 隐藏底部多余信息 --- */
-
-/* 隐藏 "Made with Hugo Blox" */
-.powered-by {
+/* --- 4. 隐藏底部多余信息 --- */
+.powered-by, .theme-toggle, .gh-count {
     display: none !important;
 }
-
-/* 隐藏 "Duplicate this template" 按钮和主题切换按钮 */
-.theme-toggle, .gh-count {
-     display: none !important;
-}
-
-/* (可选) 如果你连 "© 2025 Zhang Laboratory" 都想去掉，取消下面这行的注释 */
-/* .footer-copyright { display: none !important; } */
