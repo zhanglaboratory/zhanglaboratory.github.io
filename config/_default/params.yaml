@@ -19,3 +19,15 @@ address:
 coordinates:
   latitude: '22.788'
   longitude: '113.924'
+# -----------------------------------------------------------------------------
+# Footer Configuration
+# -----------------------------------------------------------------------------
+footer:
+  copyright:
+    notice: '© {year} Zhang Laboratory'
+    license:
+      enable: false
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+  show_powered_by: false  # <--- 关键设置：这里设为 false 会隐藏 "Made with Hugo Blox"
