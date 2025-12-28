@@ -1,16 +1,20 @@
 main:
   - name: Home
-    url: '/' # 点击回到主页
+    url: '/'
     weight: 10
 
   - name: Research
-    url: '/Research/' # 研究方向目前在主页上，所以指向主页
+    url: '/research/' # 跳转到独立的研究介绍页
     weight: 20
 
   - name: Publications
-    url: '/publication/' # <--- 关键修改：点击后进入独立的论文列表页面
+    url: '/publication/' # 跳转到独立的论文列表页
     weight: 30
 
   - name: Database
-    url: '/database/'
+    url: '/database/' # 跳转到你刚才建立的数据库页
     weight: 40
+
+  - name: Contact
+    url: '/contact/' # 跳转到独立的联系方式页
+    weight: 50
