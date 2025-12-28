@@ -1,7 +1,7 @@
 ---
 title: Databases & Tools
 date: 2023-01-01
-type: page  # 使用通用页面模板
+type: page
 ---
 
 Here you can find the open-source resources and multi-omics databases developed by **Zhang Laboratory**.
@@ -10,11 +10,7 @@ Here you can find the open-source resources and multi-omics databases developed 
 
 ### 1. KICDB: Kinase Inhibitor Cardiotoxicity Database
 
-<div style="margin-top: 20px; margin-bottom: 20px;">
-  <a href="https://zhang-lab-database.shinyapps.io/KICDB/" target="_blank" style="background-color: #2962ff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">
-    👉 Click here to access KICDB
-  </a>
-</div>
+**URL:** [https://zhang-lab-database.shinyapps.io/KICDB/](https://zhang-lab-database.shinyapps.io/KICDB/)
 
 **Full Title:** *KICDB: A Causality-Oriented Multi-Omics Database for Kinase Inhibitor-Induced Cardiotoxicity*
 
