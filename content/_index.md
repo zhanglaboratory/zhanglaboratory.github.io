@@ -80,7 +80,6 @@ sections:
     design:
       columns: '2'
       background:
-        image: ''
         text_color_light: true # 强制文字变白
         color: '#1a202c' # 深黑色背景 (类似 Han Lab)
 ---
