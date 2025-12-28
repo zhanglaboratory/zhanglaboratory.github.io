@@ -1,2 +1,4 @@
-title: Zhang Laboratory
+# 找到 title: Your Name 或者 title: ...
+title: Zhang Laboratory  # 这里控制左上角显示的文字
 baseurl: "https://zhanglaboratory.github.io/"
+copyright: '© {year} Zhang Laboratory'
