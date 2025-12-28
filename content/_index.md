@@ -1,5 +1,4 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
 date: 2022-10-24
 type: landing
@@ -8,7 +7,7 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 个人简介 (保留)
+  # 1. Biography (读取刚才修改的 admin 信息)
   - block: resume-biography-3
     content:
       username: admin
@@ -24,22 +23,19 @@ sections:
         size: medium
         shape: circle
 
-  # 2. 研究介绍 (保留)
+  # 2. Research Focus
   - block: markdown
     content:
       title: '🔬 Research Focus'
       subtitle: ''
       text: |-
-        Our laboratory integrates **clinical gastrointestinal surgery** with cutting-edge **translational research**.
+        Our laboratory is dedicated to **Precision Medicine** in Gastrointestinal Oncology. 
         
-        **Key Research Areas:**
-        1. **Clinical GI Oncology:** Minimally invasive surgical techniques.
-        2. **Non-coding RNA Genomics:** Investigating lncRNAs in tumor microenvironment.
-        3. **Nanomedicine:** Targeted drug delivery systems.
+        We combine **surgical expertise** with **multi-omics analysis** to identify novel therapeutic targets. Our current flagship project includes the **Kinase Inhibitor Cardiotoxicity Database (KICDB)**.
     design:
       columns: '1'
 
-  # 3. 精选论文 (保留)
+  # 3. Featured Publications
   - block: collection
     id: featured
     content:
@@ -52,11 +48,11 @@ sections:
       view: article-grid
       columns: 2
 
-  # 4. 全部论文 (修改：将 Papers 改为 Publications)
+  # 4. Recent Publications
   - block: collection
     id: publications
     content:
-      title: Recent Publications  # <--- 修改了这里
+      title: Recent Publications
       text: ''
       filters:
         folders:
@@ -64,6 +60,4 @@ sections:
         exclude_featured: false
     design:
       view: citation
-
-  # (Talks, News, Projects, Courses 板块已被彻底删除)
 ---
