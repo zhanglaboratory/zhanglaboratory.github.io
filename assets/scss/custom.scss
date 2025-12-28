@@ -3,30 +3,30 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, blockquote {
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* --- 2. 统一标题规格 (强制统一) --- */
+/* --- 2. 统一标题规格 (已调小 H1) --- */
 
-/* H1: 页面主标题 (如 Welcome, Research Focus, Contact Us) */
+/* H1: 页面主标题 (Welcome, Research Focus, Publications...) */
 h1 {
-    font-size: 2.5rem !important; /* 约 40px */
+    font-size: 2.0rem !important; /* <--- 从 2.5rem 改为 2.0rem (约 32px) */
     font-weight: 700 !important;
     line-height: 1.2 !important;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.2rem !important; /* 间距也相应微调 */
     color: #1a202c; /* 深黑色 */
 }
 
-/* H2/H3: 次级标题 (如 1. Precision GI..., Email, Address) */
+/* H2/H3: 次级标题 (如 1. Precision GI..., Email...) */
 h2, h3 {
     font-size: 1.5rem !important; /* 约 24px */
     font-weight: 700 !important;
-    margin-top: 2rem !important;
-    margin-bottom: 1rem !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 0.8rem !important;
     color: #2d3748;
 }
 
 /* --- 3. 统一正文规格 --- */
 p, li {
-    font-size: 1.1rem !important; /* 约 17.6px (统一阅读字号) */
-    line-height: 1.7 !important;  /* 增加行间距，阅读更舒服 */
+    font-size: 1.05rem !important; /* 稍微调小一点点正文 (约 16.8px)，更显精致 */
+    line-height: 1.7 !important;
     color: #4a5568;
 }
 
