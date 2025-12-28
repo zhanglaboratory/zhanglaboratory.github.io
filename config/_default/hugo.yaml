@@ -10,7 +10,8 @@ hasCJKLanguage: true  # 支持中文显示
 # Advanced Settings (保留默认即可)
 enable_git_info: false
 summaryLength: 30
-paginate: 10
+pagination:        # <-- 新写法
+  pagerSize: 10    # <-- 新写法
 enableEmoji: true
 footnotereturnlinkcontents: "<sup>^</sup>"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
