@@ -8,36 +8,46 @@ design:
   spacing: '6rem'
 
 sections:
-  # 1. 【改动】实验室欢迎头部 (替代原本的 Admin/Download CV)
+  # 1. 实验室欢迎语 (更具学术范)
   - block: markdown
     content:
       title: 'Welcome to Zhang Laboratory'
       subtitle: 'The Seventh Affiliated Hospital, Sun Yat-sen University'
       text: |
-        Our laboratory integrates **clinical gastrointestinal surgery** with cutting-edge **translational research**. We bridge the gap between surgical oncology and basic science to identify novel therapeutic targets.
+        Our laboratory represents a unique convergence of **high-volume clinical surgery** and **advanced translational science**.
+        
+        Led by **Dr. Jian Zhang**, an Associate Chief Physician with over **radical surgeries** for gastric and colorectal cancer, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
     design:
       columns: '1'
       background:
         gradient_mesh:
           enable: true
 
-  # 2. 研究方向 (保持不变)
+  # 2. 研究方向 (结合 CV 中的基金和具体方向)
   - block: markdown
     content:
       title: '🔬 Research Focus'
       subtitle: ''
       text: |-
-        **Key Research Areas:**
+        Our research is supported by the **National Natural Science Foundation of China (NSFC)** and focuses on three strategic pillars:
         
-        1. **Clinical GI Oncology:** Minimally invasive surgical techniques (Robotic & Laparoscopic).
-        2. **Non-coding RNA Genomics:** Investigating lncRNAs in tumor microenvironment.
-        3. **Cardio-Oncology:** Mechanisms of Kinase Inhibitor-induced cardiotoxicity.
+        ### 1. Precision GI Oncology & Surgery
+        * **Minimally Invasive Surgery:** Optimizing robotic and laparoscopic techniques for gastric and colorectal cancer.
+        * **Clinical Translation:** Improving patient outcomes through biomarker-guided surgical strategies.
+        
+        ### 2. Non-coding RNA & Epigenetics
+        * **Mechanistic Study:** Investigating the roles of **lncRNAs** (e.g., *GHRLOS*, *FAL1*) and **alternative splicing** in tumor metastasis and chemoresistance.
+        * **Ferroptosis:** Exploring NPR1-regulated ferroptosis pathways in gastric cancer.
+        
+        ### 3. Nanomedicine & Drug Delivery
+        * **Targeted Therapy:** Developing **biomimetic nanoparticles** and iRGD carriers for precise drug delivery.
+        * **Cardio-Oncology:** utilizing the **KICDB** database to mitigate kinase inhibitor-induced cardiotoxicity.
     design:
       columns: '1'
 
-  # 3. 【新增】数据库板块 (展示 KICDB 和未来数据库)
+  # 3. 数据库板块 (保持不变)
   - block: markdown
-    id: database  # <--- 对应导航栏的链接
+    id: database
     content:
       title: Databases & Tools
       subtitle: 'Open-source resources developed by our lab'
@@ -46,22 +56,11 @@ sections:
         
         [**👉 Click here to access KICDB**](https://zhang-lab-database.shinyapps.io/KICDB/)
         
-        **Authors:** Jiamin Wei, Yin Liu, Miaoqing Wu, Guoyuan Li, Xinyao Zheng, Huafeng Fu, Jian Zhang, Jijin Lin
-        
-        **Abstract:**
-        * **Background:** Kinase inhibitors (KIs) are mainstays of targeted cancer therapy, but their clinical utility is frequently limited by cardiotoxicity. A systematic resource to explore the underlying causal mechanisms is urgently needed.
-        * **Methods:** We present the KICDB, a comprehensive and interactive web server built upon a framework integrating large-scale transcriptomics meta-analysis with causal inference.
-        * **Results:** This database centralizes the findings from a comprehensive meta-analysis of 26 kinase inhibitors (KIs) across 7 studies (n=5291) identified 8,907 significant gene expression changes in human cardiomyocytes. To establish causality, we performed a two-pronged Mendelian randomization (MR) analysis. This large-scale analysis revealed 26 significant causal associations, implicating novel molecular mediators in KI-induced cardiotoxicity.
-        * **Conclusions:** KICDB serves as a valuable and accessible platform for the cardio-oncology community.
-        
-        ---
-        
-        ### 2. Upcoming Database (Work in Progress)
-        *More multi-omics databases for GI tumors are currently under development. Stay tuned.*
+        **Overview:** KICDB integrates large-scale transcriptomics meta-analysis (n=5291) with Mendelian randomization to identify causal mechanisms of cardiotoxicity induced by 26 kinase inhibitors.
     design:
       columns: '1'
 
-  # 4. 精选论文 (保持不变)
+  # 4. 精选论文 (图文展示区)
   - block: collection
     id: featured
     content:
@@ -71,10 +70,10 @@ sections:
           - publications
         featured_only: true
     design:
-      view: article-grid
+      view: card # <--- 改为 card 模式，这样图片会显示得更大更漂亮
       columns: 2
 
-  # 5. 全部论文 (保持不变)
+  # 5. 全部论文
   - block: collection
     id: publications
     content:
