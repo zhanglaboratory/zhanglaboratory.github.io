@@ -1,15 +1,15 @@
 ---
 title: Scientific Publications
 date: 2023-01-01
-view: card # 列表视图模式：citation (引用格式) | card (卡片格式)
+view: card # 保持卡片视图，展示图片和摘要
 banner:
   caption: ''
   image: ''
 ---
 
-**Full List of Research Outputs**
+**Recent Representative Publications**
 
-Below is a comprehensive collection of research papers authored by **Dr. Jian Zhang** and the **Zhang Laboratory**. 
+Below is a list of recent representative research papers authored by **Dr. Jian Zhang** and the **Zhang Laboratory**.
 
 Our work primarily focuses on:
 * **Gastrointestinal Oncology & Surgery**
