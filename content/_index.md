@@ -16,7 +16,7 @@ sections:
       text: |
         Our laboratory represents a unique convergence of **high-volume clinical surgery** and **advanced translational science**.
         
-        Led by **Dr. Jian Zhang**, an Associate Chief Physician with over **radical surgeries** for gastric and colorectal cancer, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
+        Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
     design:
       columns: '1'
       background:
@@ -37,10 +37,9 @@ sections:
         
         ### 2. Non-coding RNA & Epigenetics
         * **Mechanistic Study:** Investigating the roles of **lncRNAs** (e.g., *GHRLOS*, *FAL1*) and **alternative splicing** in tumor metastasis and chemoresistance.
-        * **Ferroptosis:** Exploring NPR1-regulated ferroptosis pathways in gastric cancer.
-        
+                
         ### 3. Nanomedicine & Drug Delivery
-        * **Targeted Therapy:** Developing **biomimetic nanoparticles** and iRGD carriers for precise drug delivery.
+        * **Targeted Therapy:** Developing **biomimetic nanoparticles** for precise drug delivery.
         * **Cardio-Oncology:** utilizing the **KICDB** database to mitigate kinase inhibitor-induced cardiotoxicity.
     design:
       columns: '1'
