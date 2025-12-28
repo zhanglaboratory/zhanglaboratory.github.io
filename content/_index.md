@@ -8,7 +8,7 @@ design:
   spacing: '3rem'
 
 sections:
-  # 1. 实验室欢迎语 + 底部图片 (合并在一个板块，最稳定)
+  # 1. 实验室欢迎语 + 底部图片
   - block: markdown
     content:
       title: 'Welcome to Zhang Laboratory'
@@ -18,8 +18,8 @@ sections:
         
         Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
 
-        <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
-          <img src="uploads/cartoon.jpg" alt="Zhang Lab Team" style="width: 90%; max-width: 600px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+        <div style="text-align: center; margin-top: 40px;">
+          <img src="https://zhanglaboratory.github.io/uploads/cartoon.jpg" alt="Zhang Lab Team" style="width: 90%; max-width: 600px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
         </div>
     design:
       columns: '1'
