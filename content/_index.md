@@ -8,22 +8,34 @@ design:
   spacing: '4rem'
 
 sections:
-  # 1. 实验室欢迎语 (文字部分)
+  # 1. 实验室欢迎语 (清理了手动字号，自动继承全局 CSS)
   - block: markdown
     content:
-      title: 'Welcome to Zhang Laboratory'
-      subtitle: 'The Seventh Affiliated Hospital, Sun Yat-sen University'
+      title: ''
+      subtitle: ''
       text: |
-        Our laboratory represents a unique convergence of **high-volume clinical surgery** and **advanced translational science**.
-        
-        Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+          <h1>Welcome to Zhang Laboratory</h1>
+          
+          <p style="font-weight: bold; color: #666;">
+            The Seventh Affiliated Hospital, Sun Yat-sen University
+          </p>
+          
+          <p>
+            Our laboratory represents a unique convergence of <strong>high-volume clinical surgery</strong> and <strong>advanced translational science</strong>.
+          </p>
+          
+          <p>
+            Led by <strong>Dr. Jian Zhang</strong>, an Associate Chief Physician <strong>specializing in the treatment of gastrointestinal tumors</strong>, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
+          </p>
+        </div>
     design:
       columns: '1'
       background:
         gradient_mesh:
           enable: true
 
-  # 2. 底部卡通图片 (已修复路径)
+  # 2. 底部卡通图片
   - block: markdown
     content:
       title: ''
