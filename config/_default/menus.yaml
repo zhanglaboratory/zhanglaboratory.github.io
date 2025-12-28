@@ -8,7 +8,7 @@ main:
     weight: 20
 
   - name: Publications
-    url: '/publication/' # 跳转到独立的论文列表页
+    url: '/publications/' # 跳转到独立的论文列表页
     weight: 30
 
   - name: Database
