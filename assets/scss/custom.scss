@@ -27,23 +27,3 @@ p, li {
     color: #4a5568;
 }
 
-/* --- 4. 【核心修复】强制隐藏底部广告 --- */
-
-/* 隐藏 "Made with Hugo Blox" 文字 */
-.powered-by {
-    display: none !important;
-}
-
-/* 隐藏 "Duplicate this template" 按钮 (精准打击) */
-a[href*="github.com"][href*="template"], 
-a[href*="generate"],
-.github-btn {
-    display: none !important;
-    visibility: hidden !important; /* 双重保险 */
-    opacity: 0 !important;         /* 三重保险 */
-}
-
-/* 隐藏底部的 Theme Toggle 和 GitHub 计数 */
-.theme-toggle, .gh-count {
-    display: none !important;
-}
