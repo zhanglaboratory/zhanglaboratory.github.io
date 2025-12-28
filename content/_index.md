@@ -14,7 +14,7 @@ sections:
       title: 'Welcome to Zhang Laboratory'
       subtitle: 'The Seventh Affiliated Hospital, Sun Yat-sen University'
       text: |
-        Our laboratory represents a unique convergence of **high-volume clinical surgery** and **advanced translational science**.
+        Our laboratory represents a unique convergence of **clinical surgery** and **advanced translational science**.
         
         Led by **Dr. Jian Zhang**, an Associate Chief Physician **specializing in the treatment of gastrointestinal tumors**, our team is dedicated to solving clinical challenges through multi-omics discovery and nanomedicine innovation.
     design:
