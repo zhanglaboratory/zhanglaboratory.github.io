@@ -1,5 +1,5 @@
 ---
-title: Scientific Publications
+title: Publications
 date: 2023-01-01
 view: card # 保持卡片视图，展示图片和摘要
 banner:
