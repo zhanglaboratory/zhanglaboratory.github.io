@@ -3,17 +3,20 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, blockquote {
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* --- 2. 统一标题规格 (H1=2.0rem, H2=1.5rem) --- */
+/* --- 2. 统一标题规格 (H1已调小至 1.75rem) --- */
+
+/* H1: 页面主标题 (Welcome, Research Focus, Publications...) */
 h1 {
-    font-size: 2.0rem !important; 
+    font-size: 1.75rem !important; /* <--- 核心修改：从 2.0rem 改为 1.75rem */
     font-weight: 700 !important;
     line-height: 1.2 !important;
     margin-bottom: 1.2rem !important;
-    color: #1a202c;
+    color: #1a202c; /* 深黑色 */
 }
 
+/* H2/H3: 次级标题 (如 1. Precision GI..., Email...) */
 h2, h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem !important; /* 保持不变 (约 24px) */
     font-weight: 700 !important;
     margin-top: 1.8rem !important;
     margin-bottom: 0.8rem !important;
@@ -27,3 +30,30 @@ p, li {
     color: #4a5568;
 }
 
+/* --- 4. 【核心修复】强制隐藏底部广告 --- */
+
+/* 隐藏 "Made with Hugo Blox" 文字 */
+.powered-by {
+    display: none !important;
+}
+
+/* 隐藏 "Duplicate this template" 按钮 (精准打击) */
+a[href*="github.com"][href*="template"], 
+a[href*="generate"],
+.github-btn,
+.theme-toggle {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+/* 6. 统一全站页脚样式 (© 2026 Zhang Laboratory) */
+.site-footer .powered-by, 
+.site-footer p {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.2rem !important;   
+    font-weight: 700 !important;    
+    color: #000000 !important;      
+    margin-top: 2rem !important;
+    text-align: center !important;
+}
