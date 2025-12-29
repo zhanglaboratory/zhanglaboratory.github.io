@@ -1,31 +1,31 @@
+/* ============================================================
+   Zhang Laboratory - 终极样式修复表
+   ============================================================ */
+
 /* --- 1. 全局字体设置 (Arial) --- */
 body, h1, h2, h3, h4, h5, h6, p, a, li, span, div, blockquote {
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-/* --- 2. 标题规格精细化控制 --- */
+/* --- 2. 标题规格 (核心修复区域) --- */
 
-/* 针对普通 H1 (如 Welcome) */
-h1 {
-    font-size: 1.5rem !important; 
+/* 【关键】针对所有板块标题 (Welcome, Research Focus, Publications...) */
+/* 我们列出了所有可能的类名，全部强制改为 1.5rem */
+h1,
+section h1,
+.section-heading h1,
+.home-section h1,
+.wg-title,
+#home h1 {
+    font-size: 1.5rem !important; /* <--- 统一强制为 24px */
     font-weight: 700 !important;
     line-height: 1.2 !important;
-    margin-bottom: 1.2rem !important;
-    color: #1a202c;
+    margin-bottom: 1.5rem !important;
+    color: #1a202c !important;
+    text-transform: none !important; /* 禁止自动大写 */
 }
 
-/* 核心修复：针对主页板块标题 (Research Focus, Publications, Contact, Database) */
-/* 这些标题有特殊的类名，必须单独强制覆盖 */
-.home-section h1, 
-.section-heading h1, 
-.wg-title {
-    font-size: 1.5rem !important; /* 强制与 Welcome 大小一致 */
-    font-weight: 700 !important;
-    margin-bottom: 20px !important;
-    text-transform: none !important; /* 防止它自动变全大写 */
-}
-
-/* 针对次级标题 (如 H2/H3) */
+/* 次级标题 (H2/H3) */
 h2, h3 {
     font-size: 1.35rem !important; 
     font-weight: 700 !important;
@@ -41,7 +41,7 @@ p, li {
     color: #4a5568;
 }
 
-/* --- 4. 底部广告与按钮隐藏 --- */
+/* --- 4. 隐藏底部广告与按钮 --- */
 .powered-by,
 a[href*="github.com"][href*="template"], 
 a[href*="generate"],
@@ -52,7 +52,7 @@ a[href*="generate"],
     opacity: 0 !important;
 }
 
-/* --- 5. 页脚样式统一 --- */
+/* --- 5. 页脚样式统一 (© 2026 Zhang Laboratory) --- */
 .site-footer .powered-by, 
 .site-footer p {
     font-family: Arial, Helvetica, sans-serif !important;
